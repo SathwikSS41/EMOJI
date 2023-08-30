@@ -1,0 +1,115 @@
+
+<html>
+    <head>
+        <style>
+            
+            .face{
+                border:5px solid black;
+                width:400px;
+                height:400px;
+                background-color: yellow;
+                border-radius: 100%;
+                animation-name: box;
+                animation-duration: 10s;
+                margin-left: 250px;
+                margin-top: 150px;
+                
+            }
+            @keyframes box{
+                0%{background-color: pink;}
+                25%{background-color: #057B69;}
+                50%{background-color: #E37959;}
+                75%{background-color: #6B33F8;}
+                100%{background-color: #59E395;}
+
+            }
+            .mouth{
+                position:absolute;
+                background-color: black;
+                width: 200px;
+                height:100px;
+                top:320px;
+                left:110px;
+                border-radius: 10px 10px 100px 100px;
+                transition:transform 1.0s ease-in;
+                margin-top: 120px;
+                margin-left: 240px;
+            }
+
+            .eye-section{
+                position:absolute;
+                width:300px;
+                height:100px;  
+                top:150px;
+                left:60px;}
+            .left-eye, .right-eye{
+                background-color: black;
+                height:100px;
+                width:100px;
+                position:absolute;
+                border-radius: 100%;
+                }
+            .right-eye{
+                left:200px;
+                transition:transform 0.0ms ease-in-out;
+            }
+            .left-eye{
+                
+                transition:transform 1.0ms ease-in-out;
+            }
+            
+
+            .left-eye::before, .right-eye::before{
+                
+                display:block;
+                background-color: rgb(24, 107, 214);
+                width:30px;
+                height:30px;
+                position:absolute;
+                top:35px;
+                left:35px;
+                border-radius: 50%;
+            }
+            body{
+                background-color: silver ;
+                position: absolute;
+            }
+            h1{
+                color: rgb(4, 255, 0);
+                text-align: center;
+                margin-left: 200px;
+                font-size: xx-large;
+                
+            }
+            div{
+                text-align: center;
+            }
+            .left-eye{
+                margin-top: 130px;
+                margin-left: 250px;
+            }
+            .right-eye{
+                margin-top: 130px;
+                margin-left: 230px ;
+            }
+            .r-puple{
+                background-color: pink;
+            }
+        </style>
+        <title>SMILEY EMOJI</title>
+    </head>
+    <body>
+        <h1>Transition EmOJi</h1>
+        <div class="face">
+            <div class="mouth"></div>
+            <div class="eye-section">
+                <div class="left-eye"></div>
+                <div class="right-eye"></div>
+                <div class="r-puple"></div>
+                <div class="l-puple"></div>
+
+            </div>
+        </div>
+        
+    </body>
+</html>
